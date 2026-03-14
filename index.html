@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Technologies | Viral Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KING<span>TECHNOLOGIES</span></div>
+        <div class="nav-links">
+            <a href="#shop">Shop</a>
+            <a href="https://wa.me/251911413518" class="wa-btn">Support</a>
+        </div>
+    </nav>
+    <header class="hero">
+        <h1>Tech from the <span>Future</span></h1>
+        <p>curated viral gadgets. $0 Shipping Worldwide.</p>
+        <a href="#shop" class="cta">Explore Drop</a>
+    </header>
+    <section class="bento-container" id="shop">
+        <div class="bento-item large" onclick="openModal('MagSafe 2-in-1 Fast cable', '24.99')">
+            <div class="badge">TRENDING</div>
+            <div class="content">
+                <h2>MagSafe 2-in-1 Cable</h2>
+                <p>Phone + Watch charging on one line.</p>
+                <span class="price">$24.99</span>
+            </div>
+        </div>
+        <div class="bento-item medium" onclick="openModal('E-Ink Smart Keychain', '19.99')">
+            <div class="badge">NEW</div>
+            <div class="content">
+                <h2>E-Ink NFC Keychain</h2>
+                <span class="price">$19.99</span>
+            </div>
+        </div>
+        <div class="bento-item small accent">
+            <h2>Fast Shipping</h2>
+            <p>7-12 Days to USA/EUR</p>
+        </div>
+    </section>
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closemodal()">&times;</span>
+            <h2 id="modalTitle">Checkout</h2>
+            <p>Total; <sapn id="modalPrice" style="color:#d4af37"></sapn></p>
+            <div class="crypto-alert">Pay with <b>USDT (TRC-20)</b>only</div>
+            <img src="qr-code.png" class="qr-img" alt="Scan to Pay">
+            <div class="address-box">
+                <code id="walletAddr">TXeHvVvTTCKZBD1EFAdQN1b3yGpMRD3dRT</code>
+                <button onclick="copyAddr()">Copy</button>
+            </div>
+            <p style="font-size:0.7rem; color: #888; margin-bottom: 15px;">Fees: -15 TRX (Paid by sender)</p>
+            <a href="#" id="waConfirm" class="confirm-btn">Confirm on WhatsApp</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 King Technologies. <a href="refund.html" style="color: #666;">Refund Policy</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
